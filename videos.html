@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" src="styles.css">
+    <title>videos</title>
+</head>
+<body>
+    <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-gray-400 mb-3">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div class="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+            <a class="text-lg font-semibold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black" href="index.html">
+             Designs-by-sj
+            </a>
+            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
+              <span class="block relative w-6 h-px rounded-sm bg-black"></span>
+              <span class="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
+              <span class="block relative w-6 h-px rounded-sm bg-black mt-1"></span>
+            </button>
+          </div>
+          <div class="lg:flex flex-grow items-center" id="example-navbar-warning">
+            <ul class="flex flex-col lg:flex-row list-none ml-auto">
+                <li class="nav-item">
+                  <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="websites.html">
+                    Web sites
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="graphics.html">
+                    Graphics
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" href="videos.html">
+                    Videos
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="flex flex-wrap" id="tabs-id">
+        <div class="w-full">
+          <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-white bg-gray-500" onclick="changeAtiveTab(event,'tab-profile')">
+                <i class="fas fa-space-shuttle text-base mr-1"></i>History<br>
+              </a>
+            </li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-gray-500 bg-white" onclick="changeAtiveTab(event,'tab-settings')">
+                <i class="fas fa-cog text-base mr-1"></i> Video Recorder
+              </a>
+            </li>
+            <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal text-gray-500 bg-white" onclick="changeAtiveTab(event,'tab-options')">
+                <i class="fas fa-briefcase text-base mr-1"></i>  Digital
+              </a>
+            </li>
+          </ul>
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+            <div class="px-4 py-5 flex-auto">
+              <div class="tab-content tab-space">
+                <div class="block" id="tab-profile">
+                  <p>
+                   Stages of my audio and video equipment.
+                    <br />
+                    <br />
+                   
+                  </p>
+                </div>
+                <div class="hidden" id="tab-settings">
+                  <p>
+                   In 1993, I was turned 13. The only thing I wanted for my birthday was an RCA shoulder video recording device. Like most suburban teens I was in a rap group. We called ourselves Brain Damage. At the time we were young angry kids. We listened to Chi-Ali, NWA, and Gang Starr. 
+                    <br />
+                    <br />
+                   
+                  </p>
+                </div>
+                <div class="hidden" id="tab-options">
+                  <p>
+                    After I got the video recorder I was able to figure out how to copy VHS tapes. Then I would make video mixes with the help of two vcrs an audio mixer. 
+                    There was a game changer in the mid 2000's a digital camera with WiFi capabilities. At the time I was very WiFi niave, but that would soon change. 
+                    <br />
+                    <br />
+                   
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-wrap justify-center">
+        <div class="w-6/12 sm:w-4/12 px-4">
+          <img src="camcorder.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div class="w-6/12 sm:w-4/12 px-4">
+          <img src="1993-rap.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center">
+        <div class="w-6/12 sm:w-4/12 px-4">
+          <img src="nikon.png" alt="..." class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" />
+        </div>
+      </div>
+      <footer class="w-full h-auto bg-gray-400 text-center fixed bottom-0">Steven Johnson<br>
+        <a href="mailto:SJohnson1247@outlook.com" >SJohnson1247@outlook.com</a> 
+        <br> Remote Devops <br>
+    </footer>
+  </div>
+    
+ 
+  <script type="text/javascript">
+    function changeAtiveTab(event,tabID){
+      let element = event.target;
+      while(element.nodeName !== "A"){
+        element = element.parentNode;
+      }
+      ulElement = element.parentNode.parentNode;
+      aElements = ulElement.querySelectorAll("li > a");
+      tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
+      for(let i = 0 ; i < aElements.length; i++){
+        aElements[i].classList.remove("text-white");
+        aElements[i].classList.remove("bg-gray-500");
+        aElements[i].classList.add("text-gray-500");
+        aElements[i].classList.add("bg-white");
+        tabContents[i].classList.add("hidden");
+        tabContents[i].classList.remove("block");
+      }
+      element.classList.remove("text-gray-500");
+      element.classList.remove("bg-white");
+      element.classList.add("text-white");
+      element.classList.add("bg-gray-500");
+      document.getElementById(tabID).classList.remove("hidden");
+      document.getElementById(tabID).classList.add("block");
+    }
+  </script
+           
+            </body>
+</html>
+
+
+  

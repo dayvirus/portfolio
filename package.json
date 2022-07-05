@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a repo with some of my work. Most of it is html, css, and. js.",
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,13 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayvirus/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dayvirus/portfolio/issues"
+  },
+  "homepage": "https://github.com/dayvirus/portfolio#readme"
 }

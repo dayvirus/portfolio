@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@popperjs/core": "2.9.1"
+    "@popperjs/core": "2.9.1",
+    "powershell": "^2.3.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0"
